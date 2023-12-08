@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    top:0;
+    font-family:roboto;
+}
+   
+body{
+    background-color: #a4cce7;
+    width:100%;
+    height:100vh;
+
+}
+html{
+    width:100%;
+    height:100vh;
+}
+section{
+    min-height: 100vh;
+    padding:50px;
+    background-color: #a4cce7;
+}
+.container{
+    top:0;
+    position:relative;
+    width:calc(100%-100px);
+    min-height: calc(100vh-28opx);
+    background:rgba(255,255,255,0.5);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-radius: 20px;
+}
+
+header{
+    position:relative;
+    flex-direction:columns;
+    width:100%;
+    top:-10px;
+    right:20;
+    left:20px;
+    background:rgba(255,255,255,0.2);
+    box-shadow:rgba(0,0,0,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border:1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5)
+
+}
+.container .headernav{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+
+} 
+.headernav h2{
+    color:#1f71a1;
+    font-weight:bold;
+    text-decoration:none;
+    font-size:2rem;
+}
+.headernav ul li{
+    list-style: none;
+    display:inline-block;
+    padding:15px;
+}
+.headernav li a{
+    text-decoration:none ;
+    font-size: 1rem;
+    color:#1f71a1;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.headernav ul li a:hover,
+.headernav ul li a.active{
+    padding:10px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+.container .contain{
+    transform:translateX(-100px);
+    max-width:700px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border:1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    padding:40px;
+    padding-left:110px;
+    margin-left:50px;
+} 
+.contain h2{
+    padding-bottom: 10px;
+    font-size:2em;
+    color:#1f71a1;
+}
+.main {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.contain p{
+    font-size: 1rem;
+}
+.icon i{
+    padding:6px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px black;
+    color:lightskyblue;
+    cursor:pointer;
+}
+.icon i:hover{
+    transform:scale(0.7) rotate(300deg)
+}
+.imgbox{
+    width:500px;
+    height:auto;
+    border:1px solid #1f71a1;
+    border-radius:25%; 
+    transform:translateY(90px);
+    overflow:hidden;
+    transition: transform 0.4s;
+}
+.imgbox:hover img{
+    transform:scale(1.2)
+}
+.imgbox img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.about{
+    padding:15px;
+    transform:translateY(-70px);
+    text-align: justify;
+    width:550px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border:1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    padding:10px;
+}
+.about h3{
+    color:#1f71a1;
+    font-size: bold;
+    font-weight:3em;
+    text-align:center;
+    padding: 5px;
+    margin:10px;
+}
+.projet h3{
+color:#1f71a1;
+    font-size: bold;
+    font-weight:3em;
+    text-align:center;
+    padding: 5px;
+    margin:10px;
+}
+.projet{
+    padding:15px;
+    transform:translateY(-70px);
+    text-align: justify;
+    width:600px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border:1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    padding:10px;
+    margin-top:30px;
+}
+.contact form{
+    padding:8px;
+    margin:8px;
+    background-color:#a4cce7;
+    border:1px solid white;
+    transform:translateY(-10px);
+    border-radius:45px
+}
+
+form h3{
+    color:#1f71a1;
+    font-size:18px;
+}
+form label{
+    padding:10px;
+    color:white;
+}
+form input{
+    padding:8px;
+    margin-bottom:8px;
+}
+form input:focus{
+    color:#a4cce7
+}
+form button{
+    padding:10px;
+}
+.ppp{
+    transform:translateX(45%)
+
+}
+
