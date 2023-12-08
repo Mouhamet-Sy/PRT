@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     top:0;
-    font-family:roboto;
+    font-family: 'Roboto', sans-serif;
 }
    
 body{
@@ -124,6 +124,7 @@ header{
     transform:translateY(90px);
     overflow:hidden;
     transition: transform 0.4s;
+    margin-right:15px;
 }
 .imgbox:hover img{
     transform:scale(1.2)
